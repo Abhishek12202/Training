@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Content from './Content'
+import AppStyle from './AppStyle'
+export default class App extends Component{
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  constructor(){
+    super();
+     this.state = {
+      name: 1
+    }
+  }
+
+  styleHandle = {
+    color: "green",
+    backgroundColor: "black"
+  }
+
+  bk = (n) => {
+    this.setState({name: this.state.name + n})
+  }
+
+  render(){
+    return(
+      <div>
+        <div style={this.styleHandle}>KEtan</div>
+        <AppStyle isActive={false}>Abhishek</AppStyle>
+        {this.state.name}
+        <Content nam={this.bk}/>
+      </div>
+    )
+  }
 }
-
-export default App;
