@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Frbs from './components/App.form'
-ReactDOM.render(<Frbs/>,document.getElementById('root'));
+import App from './SuspenceLazy/App'
+
+ReactDOM.render(<App/>,document.getElementById('root'));
 
