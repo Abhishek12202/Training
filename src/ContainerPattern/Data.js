@@ -1,7 +1,5 @@
 const data = [ 
-    {id: 1,name:"Ketan",email:"Ketan@gmail.com"},
-    {id: 2,name:"Vijay",email:"Vk@gmail.com"},
-    {id: 3,name:"Raj",email:"Raj@gmail.com"}
+    {id:1,name:"akbhai"}
   ]
 
 function getData() {

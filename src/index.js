@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './SuspenceLazy/App'
+import DynamicInput from './D_input2/DynamicInput';
 
-ReactDOM.render(<App/>,document.getElementById('root'));
+ReactDOM.render(<DynamicInput/>,document.getElementById('root'));
 

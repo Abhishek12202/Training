@@ -4,9 +4,9 @@ const Count = (props) => {
     return (
         <div>
             <h4>{props.text}-{props.count}</h4>    
-            {console.log(props.text)}
+            {console.log("hdhd==>",props.text)}
         </div>
     )
 }
 
-export default React.memo(Count)
+export default Count
